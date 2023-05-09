@@ -29,11 +29,12 @@ def main():
     elif mode == "s" and bssid != "0":
         wifi_scan2(device,bssid)
 
-    elif mode == "c" and bssid !="0":
-        wifi_crack(wordlist,pack)
-    
     elif mode == "a" :
         wifi_attack(device,bssid,dssid)
+        
+    elif mode == "c" :
+        wifi_crack(wordlist,pack)
+
     else:
         print("Error")
         os.system(exit)
