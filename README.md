@@ -1,3 +1,13 @@
+## V2.0
+### wifi_password_crack.py
+
+使用python3 wifi_password_crack.py
+另起一个终端执行:
+curl -d '{"bssid":"AP_bssid","dssid":"client_bssid","device":"wlan0"}' -H "Content-Type: application/json" -X POST 127.0.0.1:10001/start
+静待60秒喝口咖啡大概率会出
+
+
+V1.0
 wifi.py
 
 -device 指定网卡设备,若不指定此项则会使用wlan0
