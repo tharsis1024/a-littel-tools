@@ -2,19 +2,26 @@
 ### wifi_password_crack.py
 
 使用python3 wifi_password_crack.py
+
 另起一个终端执行:
+
 `curl -d '{"bssid":"AP_bssid","dssid":"client_bssid","device":"wlan0"}' -H "Content-Type: application/json" -X POST 127.0.0.1:10001/start`
+
 静待60秒喝口咖啡大概率会出
 
 ### wifi_fuzz.py
+
 使用python3 wifi_fuzz.py
+
 `curl -d '{"ssid":"AP_ssid","device":"wlan0"}' -H "Content-Type: application/json" -X POST 127.0.0.1:10002/start`
 
 ### wifi_mimt.py
+
 `curl -d '{"ssid":"eval","device":"wlan0"}' -H "Content-Type: application/json" -X POST 127.0.0.1:10003/start`
 
 
 ### wifi_ddos.py
+
 `curl -d '{"ssid":"AP_ssid","device":"wlan0"}' -H "Content-Type: application/json" -X POST 127.0.0.1:10004/start`
 
 
