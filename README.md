@@ -24,6 +24,7 @@
 
 `curl -d '{"ssid":"AP_ssid","device":"wlan0"}' -H "Content-Type: application/json" -X POST 127.0.0.1:10004/start`
 
+ddos极大概率打算继续拓展一下功能,能赶上wifi killer就行:)
 
 ## V1.0
 ### wifi.py
