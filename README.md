@@ -7,7 +7,7 @@
 
 `curl -d '{"bssid":"AP_bssid","dssid":"client_bssid","device":"wlan0"}' -H "Content-Type: application/json" -X POST 127.0.0.1:10001/start`
 
-静待60秒喝口咖啡大概率会出
+执行过后需要等待大概一分钟
 
 ### wifi_fuzz.py
 
